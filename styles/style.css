@@ -15,6 +15,7 @@ font-family: 'Roboto Condensed', sans-serif;
   background-size: cover;
   background-position: bottom center;
   height: 100vh;
+  clip-path: polygon(0 0, 100% 0, 100% 82%, 55% 100%, 50% 100%, 0 82%);
 }
 .hero h1{
   color: azure;
@@ -29,13 +30,14 @@ font-family: 'Roboto Condensed', sans-serif;
 .article , #cow-type{
   width: 80%;
   margin: 60px auto;
-  background-color: rgb(40, 202, 202);
+ 
   padding: 60px;
-  border-width: 15px;
+  
   border-color: yellow;
-  border-style: groove;
+  background: linear-gradient(45deg, pink,rgb(93, 93, 213));
+ 
 }
-.article h2{
+.article h2, #cow-type h2{
   text-align: center;
   font-size: 48px;
   border-bottom: 2px;
@@ -55,4 +57,17 @@ font-family: 'Roboto Condensed', sans-serif;
 .article p .imp{
   font-size: 2em;
   background-color: yellow;
+  display: inline;
+  width: 600px;
+}
+.cow-images{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.cow-images div{
+  min-width: 300px;
+}
+.cow-images img{
+  width: 100%;
 }
